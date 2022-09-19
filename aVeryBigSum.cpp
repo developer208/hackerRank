@@ -6,14 +6,14 @@ using namespace std;
  * Complete the 'aVeryBigSum' function below.
  *
  * The function is expected to return a LONG_INTEGER.
- * The function accepts LONG_INTEGER_ARRAY ar as parameter.
+ * The function accepts LONG_INTEGER_arrRAY arr as parrameter.
  */
 
-long long int aVeryBigSum(vector<long> ar)
+long long int aVeryBigSum(vector<long> arr)
 
 {
     long long int temp = 0;
-    for (auto it : ar)
+    for (auto it : arr)
     {
         /* code */
 
@@ -28,13 +28,13 @@ int main()
 
     int sizz;
     cin >> sizz;
-    vector<long> ar(sizz);
+    vector<long> arr(sizz);
 
-    for (int i = 0; i < ar.size(); i++)
+    for (int i = 0; i < arr.size(); i++)
     {
-        cin >> ar[i];
+        cin >> arr[i];
     }
-    long long int result = aVeryBigSum(ar);
+    long long int result = aVeryBigSum(arr);
     cout << result << setprecision(10);
 
     return 0;
