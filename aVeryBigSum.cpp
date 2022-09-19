@@ -9,14 +9,14 @@ using namespace std;
  * The function accepts LONG_INTEGER_ARRAY ar as parameter.
  */
 
-long long  int aVeryBigSum(vector<long> ar)
+long long int aVeryBigSum(vector<long> ar)
 
 {
-    long long  int temp = 0;
+    long long int temp = 0;
     for (auto it : ar)
     {
         /* code */
-        
+
         temp = temp + it;
     }
 
@@ -34,8 +34,8 @@ int main()
     {
         cin >> ar[i];
     }
-    long long  int result = aVeryBigSum(ar);
-    cout << result<<setprecision(10);
+    long long int result = aVeryBigSum(ar);
+    cout << result << setprecision(10);
 
     return 0;
 }
